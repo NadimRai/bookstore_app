@@ -1,14 +1,14 @@
-<%= bootstrap_form_for(@author, :html => { class: 'form-horizontal'}) do |f| %>
+<%= form_for(@author, :html => { class: 'form-horizontal'}) do |f| %>
 <div class="form-group">
-	<label for="first_name" clas='control-label col-md-3'>First Name.</label>
+	<!-- <label for="first_name" clas='control-label col-md-3'>First Name.</label> -->
 	<div class="col-md-9">
-		<%= f.text_field :first_name, class: 'form-control', hide_label: true %>
+		<%= f.bootstrap_text_field :first_name, class: 'form-control', hide_label: true %>
 	</div>
 </div>
 <div class="form-group">
-	<label for="last_name" clas='control-label col-md-3'>Last Name.</label>
+	<!-- <label for="last_name" clas='control-label col-md-3'>Last Name.</label> -->
 	<div class="col-md-9">
-		<%= f.text_field :last_name, class: 'form-control', hide_label: true %>
+		<%= f.bootstrap_text_field :last_name, class: 'form-control', hide_label: true %>
 	</div>
 </div>
 

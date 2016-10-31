@@ -130,7 +130,7 @@ RSpec.describe AuthorsController, :type => :controller do
 			delete :destroy, id: author.id 
 
 			expect(response).to redirect_to authors_path
-		end
+		ends
 
 	end
 end
